@@ -21,7 +21,7 @@ class Rectangle
     {
         Console.WriteLine("Объект Прямоугольник уничтожен");
     }
-
+//Не реализован деструктор
     public static Rectangle operator *(Rectangle r1, Rectangle r2)
     {
         double intersectLength = Math.Min(r1.length, r2.length);
@@ -87,7 +87,7 @@ class Program
 
         Console.WriteLine($"Площадь первого прямоугольника: {rect1.GetArea()}");
         Console.WriteLine($"площадь второго прямоугольника: {rect2.GetArea()}");
-
+//Добавить пересечения
         Console.WriteLine($"Сравнение прямоугольников:");
         Console.WriteLine($"первый прямоугольник > второй прямоугольник: {rect1 > rect2}");
         Console.WriteLine($"первый прямоугольник < второй прямоугольник: {rect1 < rect2}");
